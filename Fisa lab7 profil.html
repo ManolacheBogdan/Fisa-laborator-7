@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style ip="myStyle">
+  body{background-color: green;}
+  
+  table, th, td{
+    border: 1px solid black;
+	background-color: gray;}
+  
+  h1{color:yellow;
+     font-family:courier;
+     font-size:150%;}
+  
+  h2{color:maroon;
+     font-family: courier;
+	 margin-left: 40px;}
+	 
+  img{border-radius:50px;
+      weight:600px;
+	  height:400px;
+	  opacity: 0.50;
+	  margin:left;}
+	  
+  
+  </style>
+  <script>
+  
+  function myfunction(){
+	  document.getElementById("Asteptari").innerHTML="Urmarea unei cariere in domeniul IT sau al telecomunicatiilor";
+	  document.getElementById("poza").src ="poza profil2.jpg";
+	  
+	  document.getElementById("job").innerHTML="Programator Manolache";
+	  document.getElementById("00").innerHTML="Scop";
+	  document.getElementById("01").innerHTML="Anul";
+	  document.getElementById("02").innerHTML="Obiective realiste";
+	  document.getElementById("10").innerHTML="Sa iau peste 8 la examene";
+	  document.getElementById("11").innerHTML="Anul 1";
+      document.getElementById("12").innerHTML="Sa iau examenele la mate";
+      document.getElementById("20").innerHTML="Sa ma tin de sport";
+	  document.getElementById("21").innerHTML="Pana la final";
+	  document.getElementById("22").innerHTML="Sa alerg cetatuia fara oprire";
+	  document.getElementById("30").innerHTML="Sa m-apuc de lucru sau voluntariat";
+	  document.getElementById("31").innerHTML="Anul 3";
+	  document.getElementById("32").innerHTML="Sa gasesc un job cae sa-mi placa";
+	  
+	  document.getElementById("myStyle").style.fontSize='35px';
+  }
+  
+  function arataVarsta() {
+        var azi = new Date;
+        var varstaMea;
+        var anNasc = document.getElementById("varsta").innerHTML;
+        var anCurent = azi.getFullYear();
+
+        varstaMea = anCurent - anNasc;
+        document.getElementById("varsta").innerHTML = varstaMea;
+		}
+   
+  </script>
+<title>Fisa Laborator 7 Manolache Bogdan</title>
+</head>
+<body>
+<h1 id=job>Laborator 7-Descrierea propriei persoane</h1>
+
+<p>Nume: Manolache</p>
+<p>Prenume:Bogdan-Gabriel</p>
+<p>Numar de telefon: 0771 xxx xxx</p>
+<p>Email:manolache_bogdan_01@yahoo.com</p>
+<p onmouseover="arataVarsta()" id="varsta">2001</p>
+<p>Poza de profil:</p>
+<img id="poza" src="Manolache Bogdan.jpg">
+<p id="Asteptari"><b>Asteptari:</b><Urmarea unei cariere in domeniul IT sau al telecomunicatiilor</p>
+<table>
+<tr>
+<th id=00>Disciplina</th>
+<th id=01>Anul in care se studiaza</th>
+<th id=02>Link Fisa de disciplina</th>
+</tr>
+<tr>
+<th id=10>Componente si circuite pasive</th>
+<th id=11>Anul 1</th>
+<th id=12><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf">Fisa a disciplinei</a></th>
+</tr>
+<tr>
+<th id=20>Elemente de fizica</th>
+<th id=21>Anul 1</th>
+<th id=22><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3103.pdf">Fisa a disciplinei</a></th>
+</tr>
+<tr>
+<th id=30>Teoria circuiteor electrice</th>
+<th id=31>Anul 1</th>
+<th id=32><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3113.pdf">Fisa a disciplinei</a></th>
+</tr>
+</table>
+
+
+<h4>Hobby-uri:</h4>
+<ul>
+<li>Sportul</li>
+<li>Calatoria</li>
+<li>Filme</li>
+</ul>	
+
+</body>
+<button type="button" onclick="myfunction()">Click here</button>
+</html>
